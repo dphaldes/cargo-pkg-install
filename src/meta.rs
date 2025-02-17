@@ -2,10 +2,10 @@ use serde_derive::Deserialize;
 
 #[derive(Deserialize)]
 pub struct Manifest {
-    pub package: Package,
+    pub meta: Metadata,
 }
 
 #[derive(Deserialize)]
-pub struct Package {
+pub struct Metadata {
     pub bin: Vec<String>,
 }
